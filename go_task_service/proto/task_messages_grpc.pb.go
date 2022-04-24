@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.2.0
 // - protoc             v3.19.4
-// source: go_task_service/proto/task_messages.proto
+// source: proto/task_messages.proto
 
 package proto
 
@@ -173,5 +173,5 @@ var GoTaskService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "go_task_service/proto/task_messages.proto",
+	Metadata: "proto/task_messages.proto",
 }

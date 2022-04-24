@@ -26,9 +26,12 @@ message CreateTaskReq {
   string Title = 2;
   string TaskKey = 3;
   string Details = 4 ;
-  int32  Status = 5;
-  string CreatorID = 6;
-  string CategoryID = 7;
+  google.protobuf.Timestamp ExpectedDateTime = 5 ;
+  int32  Status = 6 ;
+  string CreatorID = 7;
+  google.protobuf.Timestamp StartDateTime = 8 ;
+  google.protobuf.Timestamp EndDateTime = 9;
+  string CategoryID = 10;
 }
 
 message CreateTaskRes {
@@ -39,7 +42,14 @@ message UpdateTaskReq {
   string TaskID = 1;
   string Title = 2;
   string TaskKey = 3;
-  int32  Status = 4 ;
+  string Details = 4 ;
+  google.protobuf.Timestamp ExpectedDateTime = 5 ;
+  int32  Status = 6 ;
+  string CreatorID = 7;
+  google.protobuf.Timestamp StartDateTime = 8 ;
+  google.protobuf.Timestamp EndDateTime = 9;
+  string CategoryID = 10;
+
 }
 
 message UpdateTaskRes {

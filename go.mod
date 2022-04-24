@@ -13,6 +13,7 @@ require (
 	github.com/segmentio/kafka-go v0.4.31
 	github.com/spf13/viper v1.11.0
 	github.com/uber/jaeger-client-go v2.30.0+incompatible
+	go.uber.org/zap v1.13.0
 	google.golang.org/grpc v1.45.0
 	google.golang.org/protobuf v1.28.0
 	gorm.io/driver/postgres v1.3.5
@@ -62,10 +63,14 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v1.2.1 // indirect
 	go.uber.org/atomic v1.6.0 // indirect
+	go.uber.org/multierr v1.5.0 // indirect
 	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4 // indirect
+	golang.org/x/lint v0.0.0-20201208152925-83fdc39ff7b5 // indirect
 	golang.org/x/net v0.0.0-20220412020605-290c469a71a5 // indirect
 	golang.org/x/sys v0.0.0-20220412211240-33da011f77ad // indirect
 	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/tools v0.1.0 // indirect
+	google.golang.org/genproto v0.0.0-20220407144326-9054f6ed7bac // indirect
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
 	gopkg.in/go-playground/assert.v1 v1.2.1 // indirect
 	gopkg.in/ini.v1 v1.66.4 // indirect
