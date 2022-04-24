@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+package goTaskService;
+
+option go_package = "./;goTaskService";
+
+message Task {
+  string TaskID = 1;
+  string Title = 2;
+  string TaskKey = 3;
+  string Details = 4 ;
+  google.protobuf.Timestamp ExpectedDateTime = 5 ;
+  int32  Status = 6 ;
+  string CreatorID = 7;
+  google.protobuf.Timestamp CreatedDate = 8;
+  google.protobuf.Timestamp UpdatedDate = 9;
+  google.protobuf.Timestamp StartDateTime = 10 ;
+  google.protobuf.Timestamp EndDateTime = 11;
+  string CategoryID = 12;
+}
+
+message CreateTaskReq {
+  string TaskID = 1;
+  string Title = 2;
+  string TaskKey = 3;
+  string Details = 4 ;
+  int32  Status = 5;
+  string CreatorID = 6;
+  string CategoryID = 7;
+}
+
+message CreateTaskRes {
+  string TaskID = 1;
+}
+
+message UpdateTaskReq {
+  string TaskID = 1;
+  string Title = 2;
+  string TaskKey = 3;
+  int32  Status = 4 ;
+}
+
+message UpdateTaskRes {
+  string TaskID = 1;
+}
+
+message GetTaskByIdReq {
+  Task task = 1;
+}

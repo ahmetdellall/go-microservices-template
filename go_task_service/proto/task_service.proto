@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "./;goTaskService";
+
+import "task_messages.proto";
+
+service goTaskService {
+  rpc CreateTask(CreateTaskReq) returns (CreateTaskRes);
+  rpc UpdateTask(UpdateTaskReq) returns (UpdateTaskRes);
+  rpc GetTaskById(GetTaskByIdReq) returns (GetTaskByIdRes);
+}
