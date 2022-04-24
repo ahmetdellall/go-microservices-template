@@ -49,3 +49,12 @@ message UpdateTaskRes {
 message GetTaskByIdReq {
   Task task = 1;
 }
+message GetTaskByIdRes {
+  Task task = 1;
+}
+
+service goTaskService {
+  rpc CreateTask(CreateTaskReq) returns (CreateTaskRes);
+  rpc UpdateTask(UpdateTaskReq) returns (UpdateTaskRes);
+  rpc GetTaskById(GetTaskByIdReq) returns (GetTaskByIdRes);
+}
